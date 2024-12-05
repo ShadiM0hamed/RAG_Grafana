@@ -1,0 +1,22 @@
+[0;1;32m●[0m docker.service - Docker Application Container Engine
+     Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Sun 2024-07-21 16:45:30 EEST; 4min 13s ago
+TriggeredBy: [0;1;32m●[0m docker.socket
+       Docs: https://docs.docker.com
+   Main PID: 56490 (dockerd)
+      Tasks: 10
+     Memory: 23.4M
+        CPU: 653ms
+     CGroup: /system.slice/docker.service
+             └─56490 /usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
+
+Jul 21 16:45:29 shady-HP-mt44-Mobile-Thin-Client dockerd[56490]: time="2024-07-21T16:45:29.041598786+03:00" level=info msg="detected 127.0.0.53 nameserver, assuming systemd-resolved, so using resolv.conf: /run/systemd/resolve/resolv.conf"
+Jul 21 16:45:29 shady-HP-mt44-Mobile-Thin-Client dockerd[56490]: time="2024-07-21T16:45:29.129634543+03:00" level=info msg="[graphdriver] using prior storage driver: overlay2"
+Jul 21 16:45:29 shady-HP-mt44-Mobile-Thin-Client dockerd[56490]: time="2024-07-21T16:45:29.170643679+03:00" level=info msg="Loading containers: start."
+Jul 21 16:45:30 shady-HP-mt44-Mobile-Thin-Client dockerd[56490]: time="2024-07-21T16:45:30.021808593+03:00" level=info msg="Default bridge (docker0) is assigned with an IP address 172.17.0.0/16. Daemon option --bip can be used to set a preferred IP address"
+Jul 21 16:45:30 shady-HP-mt44-Mobile-Thin-Client dockerd[56490]: time="2024-07-21T16:45:30.145293032+03:00" level=warning msg="error locating sandbox id 6e3dec1e570982ea70b9f3062b740d5989bb1edcaab482bc0ca00969cd9829ac: sandbox 6e3dec1e570982ea70b9f3062b740d5989bb1edcaab482bc0ca00969cd9829ac not found"
+Jul 21 16:45:30 shady-HP-mt44-Mobile-Thin-Client dockerd[56490]: time="2024-07-21T16:45:30.145491424+03:00" level=info msg="Loading containers: done."
+Jul 21 16:45:30 shady-HP-mt44-Mobile-Thin-Client dockerd[56490]: time="2024-07-21T16:45:30.195852517+03:00" level=info msg="Docker daemon" commit=662f78c containerd-snapshotter=false storage-driver=overlay2 version=27.0.3
+Jul 21 16:45:30 shady-HP-mt44-Mobile-Thin-Client dockerd[56490]: time="2024-07-21T16:45:30.196165464+03:00" level=info msg="Daemon has completed initialization"
+Jul 21 16:45:30 shady-HP-mt44-Mobile-Thin-Client dockerd[56490]: time="2024-07-21T16:45:30.270176507+03:00" level=info msg="API listen on /run/docker.sock"
+Jul 21 16:45:30 shady-HP-mt44-Mobile-Thin-Client systemd[1]: Started Docker Application Container Engine.
